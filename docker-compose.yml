@@ -31,10 +31,10 @@ services:
 
     db:
         image: mysql:8.0
-        container_name: laravel_db
+        container_name: swift-buy-db
         restart: unless-stopped
         environment:
-            MYSQL_DATABASE: swift-buy
+            MYSQL_DATABASE: swift-buy-db
             MYSQL_ROOT_PASSWORD: secret
             MYSQL_USER: swift
             MYSQL_PASSWORD: secret
